@@ -1,0 +1,4 @@
+IOC -> It stands for Inversion of Control, instead of creating an object by ourself if the spring creates an object then this
+concept is called Inversion of Control
+
+Spring creates an object by using xml, also we can say it's a Spring container.
