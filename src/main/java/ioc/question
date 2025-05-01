@@ -1,0 +1,36 @@
+Problem statement
+Suppose you are a software developer working at a fintech startup called PayMeNow.
+
+
+
+You are assigned to create a console Payment Service application using Spring Boot and the concept of Inversion of Control.
+
+
+
+Tasks:-
+
+
+1. Go to start.spring.io and create a new project.
+
+2. Add the necessary dependencies for the project.
+
+3. Create the PaymentService interface with a processPayment() method and place it in a new package.
+
+4. Create the CreditCardPaymentService, PayPalPaymentService, and BankTransferPaymentService classes, each implementing the PaymentService interface 
+and placing them in the same package.
+
+5. Define the bean definitions for each of the PaymentService implementations in the application.xml file.
+
+6. Run and Test the code.
+Note:-
+
+
+1. Don't change the versions of spring-boot (3.0.0) and Java (17). If needed then install the same.
+
+Sample output:-
+
+Enter payment amount
+1000
+Enter payment method (CreditCard, paypal, or BankTransfer)
+CreditCard
+Processing credit card payment of $1000.0
