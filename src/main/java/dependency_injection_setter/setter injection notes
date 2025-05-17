@@ -1,0 +1,9 @@
+If we have to inject multiple objects using constructor, then it will be cumbersome and the 
+readability and maintainability will be less because of it we have setter injection
+
+To use setter injection, we have to declare the setter function in the class where we have to inject the dependency.
+
+In the xml file, instead of constructor-arg we have to use property tag like below
+  <property name="tyre" ref="sportsTyre"/>
+  
+Above name attribute having the value of the variable of the type which we are going to inject

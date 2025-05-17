@@ -1,0 +1,11 @@
+We have to inject the tyre dependency to the car type
+
+Sample Output:
+Hi, please enter your name
+Mohan
+please select your car of choice 
+ 1) normal car 
+ 2) sports car 
+ 3) truck
+1
+Mohan owns a normal car with normal tyre

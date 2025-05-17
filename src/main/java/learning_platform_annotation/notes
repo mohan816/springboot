@@ -1,0 +1,19 @@
+Annotation: It's a metadata which means additional information
+
+@Component -> Used to create a bean
+@Autowired => Used to inject the dependency to the class, if we use @Autowired to the class then it won't through any error
+              if we use the same to the interface and the interface have the multiple implementations then it will through
+              no qualifying bean, to handle this we have to use the @Qualifier annotation and mention the name which is
+              given in the @Component("")
+@Qualifier => Used to specify which bean has to inject to the field.
+@Scope -> Is used to specify the scope of the bean
+@SpringBootApplication => When comes to web application we have some default configuration we are supposed to do each time
+                          to overcome this manual task, spring people comes with this annotation. It execute the application
+                          in server. It bundled few annotations namely @Configuration @ComponentScan @EnableAutoConfiguration
+                          
+yml: Yet another markup language, we are using this file to do the configuration which are required for the application, like port, db connection etc.
+
+Port: It is used to connect to the system. Example: We have some physical ports namely USD,HDMI(Used to connect to the computer) etc. Like this we
+      have network port as well.
+      
+@Service @Controller @Repository -> Based on the requirements developers uses this annotations, and all this annotations represents the bean

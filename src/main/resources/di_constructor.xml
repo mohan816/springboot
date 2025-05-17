@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <bean id="normalTyre" class="dependency_injection_constructor.NormalTyre"/>
+    <bean id="sportsTyre" class="dependency_injection_constructor.SportsTyre"/>
+    <bean id="heavyTyre" class="dependency_injection_constructor.HeavyTyre"/>
+
+
+    <bean id="normalCarNormalTyre" class="dependency_injection_constructor.NormalCar">
+      <constructor-arg ref="normalTyre"/>
+     </bean>
+    <bean id="normalCarSportsTyre" class="dependency_injection_constructor.NormalCar">
+      <constructor-arg ref="sportsTyre"/>
+     </bean>
+    <bean id="normalCarHeavyTyre" class="dependency_injection_constructor.NormalCar">
+      <constructor-arg ref="heavyTyre"/>
+     </bean>
+    <bean id="sportsCarNormalTyre" class="dependency_injection_constructor.SportsCar">
+      <constructor-arg ref="normalTyre"/>
+     </bean>
+    <bean id="sportsCarSportsTyre" class="dependency_injection_constructor.SportsCar">
+      <constructor-arg ref="sportsTyre"/>
+     </bean>
+    <bean id="sportsCarHeavyTyre" class="dependency_injection_constructor.SportsCar">
+      <constructor-arg ref="heavyTyre"/>
+     </bean>
+     <bean id="truckNormalTyre" class="dependency_injection_constructor.Truck">
+      <constructor-arg ref="normalTyre"/>
+     </bean>
+    <bean id="truckSportsTyre" class="dependency_injection_constructor.Truck">
+      <constructor-arg ref="sportsTyre"/>
+     </bean>
+    <bean id="truckHeavyTyre" class="dependency_injection_constructor.Truck">
+      <constructor-arg ref="heavyTyre"/>
+     </bean>
+
+</beans>

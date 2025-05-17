@@ -1,0 +1,40 @@
+MVC: It stands for Model, View, Controller. It is used to create web applications in Spring boot. It provides tools to automatically configure and wire
+     together the model, view and controller.
+
+Model: It handles the data and business logic of the application
+View:  It is a user interface and it decides how to represent the data to the user.
+Controller: It is used to control the data flow between the Model and View.
+
+JSP: It stands for Java Server Page, and it comes under View layer of MVC. It is like HTML but contains Java code which is executed in the Server to
+     generate HTML page which is sent to the user's browser.
+     
+Dev Tools: Used to auto restart the application whenever the code changes, also used to auto refresh the browser(Live Reload).
+
+Some Dependencies:
+    Tomcat-embed-Jasper => To use JSP in our application, we required this dependency
+    jstl => Jakarta Standard Library, Used to give additional information to JSP
+    spring-boot-devtools => Used to auto restart the application
+    
+Jsp standard folder structure:
+      main -> webapp -> WEB-INF -> jsp
+      
+Application.yml file is needed to be configured so that prefix and suffix can be added, each time it is not required to explicitly mention the jsp path
+in the program
+
+
+Understanding the Problem statement: We are going to work using MVC
+Home -> Registration -> success
+
+Standard good project structure:
+
+Web -> Service -> Domain -> repository
+
+Web: We can say http requests
+Service: After the request comes it delegates to the particular service
+Domain: Business objects
+repository: to store the data (It act as a bridge to the database)
+
+
+
+
+

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!-- bean definitions here -->
+    <bean id="simpleUser" class="learning_platform.SimpleUser" scope="prototype"/>
+    <bean id="simpleUserList" class="learning_platform.SimpleUserList" scope="prototype"/>
+    <bean id="javaInstructor" class="learning_platform.JavaInstructor" init-method="init" destroy-method="dest"/>
+    <bean id="springInstructor" class="learning_platform.SpringInstructor" init-method="init" destroy-method="dest"/>
+    <bean id="paidCourseJava" class="learning_platform.PaidCourse">
+    <property name="instructor" ref="javaInstructor"/>
+    </bean>
+    <bean id="paidCourseSpring" class="learning_platform.PaidCourse">
+    <property name="instructor" ref="springInstructor"/>
+    </bean>
+</beans>

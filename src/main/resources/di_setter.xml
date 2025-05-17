@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <bean id="normalTyre" class="dependency_injection_setter.NormalTyre"/>
+    <bean id="sportsTyre" class="dependency_injection_setter.SportsTyre"/>
+
+    <bean id="sportsCarNormalTyre" class="dependency_injection_setter.SportsCar">
+      <property name="tyre" ref="normalTyre"></property>
+     </bean>
+    <bean id="sportsCarSportsTyre" class="dependency_injection_setter.SportsCar">
+      <property name="tyre" ref="sportsTyre"></property>
+     </bean>
+
+</beans>

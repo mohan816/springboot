@@ -7,7 +7,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class PaymentApplication {
 	
 	public static void main(String[] args) {
-		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("ioc.xml");
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter payment amount");
 		double amount = sc.nextDouble();

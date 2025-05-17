@@ -1,0 +1,7 @@
+Two life cycle methods are there in spring
+   1)init() 2) destory()
+   
+init: This method will be called once the bean is created. Used to initialize the data. This method will be
+      called in both singleton and prototype bean scope
+destroy: This method will be called before the bean is destroyed. Used to clean up the data. This method will
+         be called only in singleton scope.

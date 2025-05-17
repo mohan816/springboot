@@ -1,0 +1,10 @@
+Bean Scope is the concept which help us to understand the scope of each bean
+
+Two types of scope are there namely, singleton and prototype
+Singleton -> Each time if we call it will give the same reference
+prototype -> Each time it will give the unique reference
+
+Difference:
+Singleton -> Single instance & less memory
+Prototype -> Multiple instance & more memory
+
